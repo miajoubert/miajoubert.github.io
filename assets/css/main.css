@@ -3676,3 +3676,15 @@ body.is-preload #header:after {
 .icon-hover {
 	color: rgba(247, 18, 160, .8);
 }
+
+.screenshot {
+	box-shadow: 2px 2px 3px #333333;
+	background-image: "../../images/pic02.jpg";
+}
+
+.screenshot:hover {
+	z-index: 1;
+	box-shadow: 2px 2px 5px #333333;
+	cursor: pointer;
+	/* transition: box-shadow .5s; */
+}
