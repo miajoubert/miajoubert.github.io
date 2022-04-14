@@ -2396,9 +2396,9 @@ input[type="radio"]+label:before {
 	font-weight: 400;
 }
 
-.icon>.label {
+/* .icon>.label {
 	display: none;
-}
+} */
 
 .icon:before {
 	line-height: inherit;
@@ -2677,16 +2677,18 @@ ul.icons {
 	cursor: default;
 	list-style: none;
 	padding-left: 0;
+	text-align: center;
 }
 
 ul.icons li {
 	display: inline-block;
 	padding: 0 1.25em 0 0;
+	margin: 5px;
 }
 
-ul.icons li:last-child {
+/* ul.icons li:last-child {
 	padding-right: 0;
-}
+} */
 
 ul.icons li .icon:before {
 	font-size: 1.5em;
@@ -2895,6 +2897,10 @@ button.primary,
 	background-color: #555;
 	box-shadow: none !important;
 	color: #fff !important;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 input[type="submit"].primary:hover,
@@ -2905,7 +2911,8 @@ button.primary:hover,
 	background-color: #626262;
 }
 
-.button.primary:hover a {
+.button.primary:hover>span,
+.button.primary:hover>#icon-text {
 	color: #fff;
 }
 
@@ -3677,8 +3684,13 @@ body.is-preload #header:after {
 	max-width: 20rem;
 }
 
-.icon-hover {
+.icon-hover,
+#icon-text {
 	color: rgba(247, 18, 160, .8);
+}
+
+#icon-text {
+	margin-left: 5px;
 }
 
 .screenshot {
