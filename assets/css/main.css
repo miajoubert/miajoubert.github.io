@@ -2905,6 +2905,10 @@ button.primary:hover,
 	background-color: #626262;
 }
 
+.button.primary:hover a {
+	color: #fff;
+}
+
 input[type="submit"].primary:active,
 input[type="reset"].primary:active,
 input[type="button"].primary:active,
