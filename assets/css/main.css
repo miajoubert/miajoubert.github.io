@@ -3390,6 +3390,10 @@ body.is-preload #header:after {
 		padding: 6em 0 6em 0;
 	}
 
+	#footer {
+		padding: 2em 0 2em 0;
+	}
+
 }
 
 /* Large */
@@ -3450,7 +3454,7 @@ body.is-preload #header:after {
 	/* Footer */
 
 	#footer {
-		padding: 4em 0 4em 0;
+		padding: 2em 0 2em 0;
 		background-attachment: scroll;
 	}
 
@@ -3487,7 +3491,7 @@ body.is-preload #header:after {
 	/* Footer */
 
 	#footer {
-		padding: 5em 3em 5em 3em;
+		padding: 2em 0 2em 0;
 	}
 
 	/* One */
@@ -3703,4 +3707,19 @@ body.is-preload #header:after {
 	box-shadow: 2px 2px 5px #333333;
 	cursor: pointer;
 	/* transition: box-shadow .5s; */
+}
+
+::-webkit-scrollbar {
+	width: 20px;
+}
+
+::-webkit-scrollbar-track {
+	background: lightgray;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(darkgray 40%, #808080 100%);
+	border-radius: 3px;
+	box-shadow: 0 0 3px 0 black;
 }
